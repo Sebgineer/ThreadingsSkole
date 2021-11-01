@@ -3,26 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace ThreadingsOpgave1
+namespace ovelse1and2
 {
     class Tråd
     {
-        public void Process()
+        public void Process(object text)
         {
             for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine("C#-trådning er nemt!");
+                Console.WriteLine(text);
                 Thread.Sleep(1000);
             }
         }
 
-        public void Process2()
-        {
-            for (int i = 0; i < 5; i++)
-            {
-                Console.WriteLine("Også med flere tråde ...");
-                Thread.Sleep(1000);
-            }
-        }
     }
 }

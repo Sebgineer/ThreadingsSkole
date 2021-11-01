@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace ovelse1and2
+namespace ThreadSyn1
 {
     class Program
     {
@@ -10,10 +10,10 @@ namespace ovelse1and2
             Tråd tråd = new Tråd();
             Thread thread1 = new Thread(tråd.Process);
             Thread thread2 = new Thread(tråd.Process);
-            thread1.Start("C#-trådning er nemt!");
-            thread2.Start("Også med flere tråde ...");
 
-            Console.ReadKey();
+            thread1.Start(2);
+            Thread.Sleep(500);
+            thread2.Start(-1);
         }
     }
 }

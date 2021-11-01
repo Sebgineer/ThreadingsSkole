@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingsOpgave1", "ThreadingsOpgave1\ThreadingsOpgave1.csproj", "{1A815FA1-9B2B-495D-9679-FED55DFC7D7A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ovelse1and2", "ThreadingsOpgave1\ovelse1and2.csproj", "{1A815FA1-9B2B-495D-9679-FED55DFC7D7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ovelse1.3", "ovelse1.3\ovelse1.3.csproj", "{BBAC2836-DA92-4714-945F-22BE94541326}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ovelse1.4", "ovelse1.4\ovelse1.4.csproj", "{70C072B5-BD10-4FE6-B379-64BA249BABBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPool1", "ThreadPool1\ThreadPool1.csproj", "{70E7E729-CB15-46A9-97C6-AF4B17C0260D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSyn1", "ThreadSyn1\ThreadSyn1.csproj", "{EC01A800-0A91-4CFB-A90D-426D5CD75FE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSyn2", "ThreadSyn2\ThreadSyn2.csproj", "{FE4D85FF-A221-44AD-8B1C-D44937288FE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{1A815FA1-9B2B-495D-9679-FED55DFC7D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A815FA1-9B2B-495D-9679-FED55DFC7D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A815FA1-9B2B-495D-9679-FED55DFC7D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBAC2836-DA92-4714-945F-22BE94541326}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBAC2836-DA92-4714-945F-22BE94541326}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBAC2836-DA92-4714-945F-22BE94541326}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBAC2836-DA92-4714-945F-22BE94541326}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70C072B5-BD10-4FE6-B379-64BA249BABBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C072B5-BD10-4FE6-B379-64BA249BABBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C072B5-BD10-4FE6-B379-64BA249BABBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C072B5-BD10-4FE6-B379-64BA249BABBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70E7E729-CB15-46A9-97C6-AF4B17C0260D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70E7E729-CB15-46A9-97C6-AF4B17C0260D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70E7E729-CB15-46A9-97C6-AF4B17C0260D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70E7E729-CB15-46A9-97C6-AF4B17C0260D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC01A800-0A91-4CFB-A90D-426D5CD75FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC01A800-0A91-4CFB-A90D-426D5CD75FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC01A800-0A91-4CFB-A90D-426D5CD75FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC01A800-0A91-4CFB-A90D-426D5CD75FE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE4D85FF-A221-44AD-8B1C-D44937288FE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE4D85FF-A221-44AD-8B1C-D44937288FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE4D85FF-A221-44AD-8B1C-D44937288FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE4D85FF-A221-44AD-8B1C-D44937288FE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
