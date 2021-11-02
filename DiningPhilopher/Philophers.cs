@@ -28,22 +28,25 @@ namespace DiningPhilopher
         //Method
         public void StartPhilophers()
         {
+            bool haveEat;
             while (true)
             {
+                haveEat = false;
                 lock (this.forkLeft)
                 {
                     if (Monitor.TryEnter(this.forkRight))
                     {
                         Eat();
+                        haveEat = true;
 
                         Monitor.Pulse(this.forkRight);
                         Monitor.Exit(this.forkRight);
                     }
-                    else
-                    {
-                        Monitor.Pulse(this.forkLeft);
-                    }
+                    Monitor.Pulse(this.forkLeft);
                 }
+                if (haveEat) Think();
+
+
             }
         }
 
@@ -55,12 +58,12 @@ namespace DiningPhilopher
             Thread.Sleep(rnd.Next(900, 2000));
         }
 
-        //private void Sleep()
-        //{
-        //    Random rnd = new Random();
-        //    Console.WriteLine($"[{this.name}] Tager Pause");
+        private void Think()
+        {
+            Random rnd = new Random();
+            //Console.WriteLine($"[{this.name}] Tænker");
 
-        //    Thread.Sleep(rnd.Next(2000, 5000));
-        //}
+            Thread.Sleep(rnd.Next(2000, 5000));
+        }
     }
 }
