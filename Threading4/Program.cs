@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace ovelse1._4
+namespace Threading4
 {
     class Program
     {

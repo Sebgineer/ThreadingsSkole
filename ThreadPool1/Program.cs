@@ -7,6 +7,12 @@ namespace ThreadPool1
 {
     class Program
     {
+
+        //Thread Pool Execution
+        //Time consumed by ProcessWithThreadPoolMethod is : 211621
+        //Thread Execution
+        //Time consumed by ProcessWithThreadMethod is : 23393200
+
         static void Main(string[] args)
         {
             Stopwatch mywatch = new Stopwatch();

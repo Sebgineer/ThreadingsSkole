@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace ThreadSyn2
 {
@@ -6,7 +7,15 @@ namespace ThreadSyn2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Tråd tråd = new Tråd();
+
+            Thread thread1 = new Thread(tråd.Process);
+            Thread thread2 = new Thread(tråd.Process);
+            Thread thread3 = new Thread(tråd.Process);
+            thread1.Start('*');
+            thread2.Start('#');
+            thread3.Start('@');
+
         }
     }
 }

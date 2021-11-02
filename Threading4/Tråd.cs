@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace ovelse1._4
+namespace Threading4
 {
     class Tråd
     {
