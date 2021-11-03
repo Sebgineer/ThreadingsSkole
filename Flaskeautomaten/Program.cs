@@ -6,10 +6,9 @@ namespace Flaskeautomaten
     {
         static void Main(string[] args)
         {
-            SodaBottle soda = new SodaBottle();
-            
+            Manager manager = new Manager();
 
-            Console.WriteLine();
+            manager.Start();
         }
     }
 }

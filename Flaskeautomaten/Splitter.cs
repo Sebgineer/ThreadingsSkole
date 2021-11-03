@@ -26,8 +26,9 @@ namespace Flaskeautomaten
             {
                 lock (this.Input.Bottles)
                 {
-                    if (this.Input.Bottles.Length > 0)
+                    if (!this.Input.isEmpty())
                     {
+                        Console.WriteLine("test");
                         this.bottle = this.Input.TakeBottle();
                         this.SendBottle();
 
@@ -38,19 +39,23 @@ namespace Flaskeautomaten
                         Monitor.Wait(this.Input.Bottles);
                     }
                 }
+                Thread.Sleep(500);
             }
         }
 
         private void SendBottle()
         {
-            Type type = this.bottle.GetType();
-            if (type == new SodaBottle().GetType())
+            if (this.bottle != null)
             {
-                this.BufferSend(this.OutputSoda);
-            }
-            else if (type == new BeerBottle().GetType())
-            {
-                this.BufferSend(this.OutputBeer);
+                Type type = this.bottle.GetType();
+                if (type == new SodaBottle().GetType())
+                {
+                    this.BufferSend(this.OutputSoda);
+                }
+                else if (type == new BeerBottle().GetType())
+                {
+                    this.BufferSend(this.OutputBeer);
+                }
             }
         }
 
@@ -60,7 +65,7 @@ namespace Flaskeautomaten
             {
                 lock (Output.Bottles)
                 {
-                    if (Output.Bottles.Length < Output.MaxBuffer)
+                    if (!Output.isFull())
                     {
                         Output.GiveBottle(this.bottle);
                         ResetBottle();

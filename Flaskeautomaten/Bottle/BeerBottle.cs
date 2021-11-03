@@ -6,5 +6,11 @@ namespace Flaskeautomaten
 {
     class BeerBottle : Bottle
     {
+        //Constuctor
+        public BeerBottle()
+        {
+            //Making an random name, to keeping eye on the object
+            this.name = $"Beer: {this.RandomNum()}";
+        }
     }
 }
