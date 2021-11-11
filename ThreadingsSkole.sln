@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingSyn4", "ThreadingS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flaskeautomaten", "Flaskeautomaten\Flaskeautomaten.csproj", "{552920C9-5FEF-4F8A-8055-87579A375C3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bagagesorteringssystem", "Bagagesorteringssystem\Bagagesorteringssystem.csproj", "{8D98A83B-27D2-449F-AD68-47880725C264}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{552920C9-5FEF-4F8A-8055-87579A375C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{552920C9-5FEF-4F8A-8055-87579A375C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{552920C9-5FEF-4F8A-8055-87579A375C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D98A83B-27D2-449F-AD68-47880725C264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D98A83B-27D2-449F-AD68-47880725C264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D98A83B-27D2-449F-AD68-47880725C264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D98A83B-27D2-449F-AD68-47880725C264}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
